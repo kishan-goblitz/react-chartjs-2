@@ -11,7 +11,7 @@ specifiers:
   '@tsconfig/docusaurus': ^1.0.4
   '@types/react': ^18.0.0
   clsx: ^1.1.1
-  docusaurus-plugin-react-docgen-typescript: ^0.1.0
+  docusaurus-plugin-react-docgen-typescript: ^1.0.0
   file-loader: ^6.2.0
   git-branch: ^2.0.1
   prism-react-renderer: ^1.2.1
@@ -30,7 +30,7 @@ dependencies:
   '@mdx-js/react': 1.6.22_react@18.2.0
   '@svgr/webpack': 6.2.0
   clsx: 1.1.1
-  docusaurus-plugin-react-docgen-typescript: 0.1.0_ae3df0e9a99889e03cfe465c3e355579
+  docusaurus-plugin-react-docgen-typescript: 1.0.1_ae3df0e9a99889e03cfe465c3e355579
   file-loader: 6.2.0_webpack@5.66.0
   git-branch: 2.0.1
   prism-react-renderer: 1.2.1_react@18.2.0
@@ -3200,6 +3200,12 @@ packages:
       concat-map: 0.0.1
     dev: false
 
+  /brace-expansion/2.0.1:
+    resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
+    dependencies:
+      balanced-match: 1.0.2
+    dev: false
+
   /braces/2.3.2:
     resolution: {integrity: sha512-aNdbnj9P8PjdXU4ybaWLK2IF3jc/EoDYbC7AazW6to3TRsfXxscC9UXOB5iDiEQrkyIbWp2SLQda4+QAa7nc3w==}
     engines: {node: '>=0.10.0'}
@@ -4078,13 +4084,13 @@ packages:
       buffer-indexof: 1.1.1
     dev: false
 
-  /docusaurus-plugin-react-docgen-typescript/0.1.0_ae3df0e9a99889e03cfe465c3e355579:
-    resolution: {integrity: sha512-1TFBV2ouah6OA8ISJ0wgfzzYXBpfKeowyF1eTfr9KsS/6Ki98xdOei7nGgD56MHW+cg3fDm5W4UUWvO72B7KWQ==}
+  /docusaurus-plugin-react-docgen-typescript/1.0.1_ae3df0e9a99889e03cfe465c3e355579:
+    resolution: {integrity: sha512-4fAJUwfxcTshz6fXH1eBrRispKKc9M60aiOZ73nmooWdMdMSB0qD5Vk+5r8QApPdCJBstj/sQxj7izyINlspjA==}
     peerDependencies:
       react: '>=16.8.0'
-      react-docgen-typescript: ^1.20.0
+      react-docgen-typescript: ^2.0.0
     dependencies:
-      globby: 11.1.0
+      glob: 8.0.3
       react: 18.2.0
       react-docgen-typescript: 2.2.2_typescript@4.5.4
     dev: false
@@ -4695,7 +4701,7 @@ packages:
     dev: false
 
   /fs.realpath/1.0.0:
-    resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
+    resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: false
 
   /fsevents/2.3.2:
@@ -4790,6 +4796,17 @@ packages:
       minimatch: 3.0.4
       once: 1.4.0
       path-is-absolute: 1.0.1
+    dev: false
+
+  /glob/8.0.3:
+    resolution: {integrity: sha512-ull455NHSHI/Y1FqGaaYFaLGkNMMJbavMrEGFXG/PGrg6y7sutWHUHrz6gy6WEBH6akM1M414dWKCNs+IhKdiQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      fs.realpath: 1.0.0
+      inflight: 1.0.6
+      inherits: 2.0.4
+      minimatch: 5.1.0
+      once: 1.4.0
     dev: false
 
   /global-dirs/3.0.0:
@@ -5263,14 +5280,14 @@ packages:
     dev: false
 
   /inflight/1.0.6:
-    resolution: {integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=}
+    resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
     dev: false
 
   /inherits/2.0.3:
-    resolution: {integrity: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=}
+    resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
     dev: false
 
   /inherits/2.0.4:
@@ -6089,6 +6106,13 @@ packages:
       brace-expansion: 1.1.11
     dev: false
 
+  /minimatch/5.1.0:
+    resolution: {integrity: sha512-9TPBGGak4nHfGZsPBohm9AWg6NoT7QTCehS3BIJABslyZbzxfV78QM2Y6+i741OPZIafFAaiiEMh5OyIrJPgtg==}
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: false
+
   /minimist/1.2.5:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
     dev: false
@@ -6240,7 +6264,7 @@ packages:
     dev: false
 
   /object-assign/4.1.1:
-    resolution: {integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=}
+    resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
     engines: {node: '>=0.10.0'}
     dev: false
 
@@ -6307,7 +6331,7 @@ packages:
     dev: false
 
   /once/1.4.0:
-    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
+    resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
       wrappy: 1.0.2
     dev: false
@@ -8883,7 +8907,7 @@ packages:
     dev: false
 
   /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: false
 
   /write-file-atomic/3.0.3:
