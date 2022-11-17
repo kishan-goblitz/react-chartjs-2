@@ -6,7 +6,7 @@ specifiers:
   '@docusaurus/module-type-aliases': 2.0.0-beta.14
   '@docusaurus/preset-classic': 2.0.0-beta.14
   '@docusaurus/theme-search-algolia': ^2.0.0-beta.9
-  '@mdx-js/react': ^1.6.21
+  '@mdx-js/react': ^2.0.0
   '@svgr/webpack': ^6.0.0
   '@tsconfig/docusaurus': ^1.0.4
   '@types/react': ^18.0.0
@@ -27,7 +27,7 @@ dependencies:
   '@docusaurus/core': 2.0.0-beta.14_57bce19158533a280d74c2f88fe935d3
   '@docusaurus/preset-classic': 2.0.0-beta.14_87da78e1bc0778204dc16471b52fb1be
   '@docusaurus/theme-search-algolia': 2.0.0-beta.14_87da78e1bc0778204dc16471b52fb1be
-  '@mdx-js/react': 1.6.22_react@18.2.0
+  '@mdx-js/react': 2.1.5_react@18.2.0
   '@svgr/webpack': 6.2.0
   clsx: 1.1.1
   docusaurus-plugin-react-docgen-typescript: 0.1.0_ae3df0e9a99889e03cfe465c3e355579
@@ -2214,6 +2214,16 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@mdx-js/react/2.1.5_react@18.2.0:
+    resolution: {integrity: sha512-3Az1I6SAWA9R38rYjz5rXBrGKeZhq96CSSyQtqY+maPj8stBsoUH5pNcmIixuGkufYsh8F5+ka2CVPo2fycWZw==}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      '@types/mdx': 2.0.3
+      '@types/react': 18.0.25
+      react: 18.2.0
+    dev: false
+
   /@mdx-js/runtime/1.6.22_react@18.2.0:
     resolution: {integrity: sha512-p17spaO2+55VLCuxXA3LVHC4phRx60NR2XMdZ+qgVU1lKvEX4y88dmFNOzGDCPLJ03IZyKrJ/rPWWRiBrd9JrQ==}
     engines: {node: '>=8'}
@@ -2541,6 +2551,10 @@ packages:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
     dependencies:
       '@types/unist': 2.0.6
+    dev: false
+
+  /@types/mdx/2.0.3:
+    resolution: {integrity: sha512-IgHxcT3RC8LzFLhKwP3gbMPeaK7BM9eBH46OdapPA7yvuIUJ8H6zHZV53J8hGZcTSnt95jANt+rTBNUUc22ACQ==}
     dev: false
 
   /@types/mime/1.3.2:
